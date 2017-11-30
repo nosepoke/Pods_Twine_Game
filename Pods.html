@@ -1,4 +1,41 @@
-<tw-storydata name="Pods" startnode="49" creator="Twine" creator-version="2.1.3" ifid="979B7EC9-5DC5-444B-997E-5058A3363E9A" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Pods" startnode="49" creator="Twine" creator-version="2.1.3" ifid="979B7EC9-5DC5-444B-997E-5058A3363E9A" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+  background-color: #262626;
+  color: #f2f2f2;
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 150%
+}
+a {
+  color: #008ae6;
+}
+a:hover {
+  color: #008ae6;
+  text-decoration: none;
+  border-bottom: 3px solid #008ae6;
+}
+
+/*Below are the styles for the environment tags (room, hallway, etc.) */
+
+.light {
+  background-color: #bfbfbf;
+  color: #262626;
+  font-family: Futura, Helvetica, sans-serif;
+  a {
+	color: #ffffff;
+  }
+}
+
+/* This is old stuff from when I was experimenting with tags for the first time. Can probably be deleted.
+
+  a {
+	color: #c15023;
+  }
+  a:hover {
+	color: #e55d34;
+	text-decoration: none;
+	border-bottom: 5px solid #96897f;
+  }
+}
+*/
 
 
 
@@ -14,6 +51,8 @@
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
 
 
 
@@ -49,7 +88,7 @@ You work first shift. You&#x27;re &lt;i&gt;supposed&lt;/i&gt; to be asleep right
 
 Instead, you&#x27;re awake, blinking at the dark.</tw-passagedata><tw-passagedata pid="5" name="Click" tags="Room Light" position="890,514">A soft glow emanates from the LED above your bed, illuminating the gray walls.
 
-You look around the room. It bothers you that the computer didn&#x27;t respond. 
+You look around the room. 
 
 Everything looks normal from here, but maybe you should [[check the room|keep looking]] just in case.
 
@@ -212,7 +251,11 @@ Suddenly, you&#x27;re [[awake]].</tw-passagedata><tw-passagedata pid="50" name="
 
 Well, you&#x27;re awake now. Might as well turn on the [[lights]].
 
-/%Have the link to &quot;lights&quot; appear the second time the player visits this tile. You want them to visit the room, alarm clock, or window first, then use the BACK arrow to return here.%/</tw-passagedata><tw-passagedata pid="51" name="Reach for the switch" tags="Room Dark" position="901,376">Guided by the glow of your clock, you fumble for the wall panel next to your bed. Your hands find the button.
+/%Have the link to &quot;lights&quot; appear the second time the player visits this tile. You want them to visit the room, alarm clock, or window first, then use the BACK arrow to return here.%/</tw-passagedata><tw-passagedata pid="51" name="Reach for the switch" tags="Room Dark" position="901,376">The computer&#x27;s silence bothers you.
+
+Guided by the glow of your clock, you fumble for the wall panel next to your bed. 
+
+There&#x27;s the button.
 
 [[Click]].</tw-passagedata><tw-passagedata pid="52" name="a planet" tags="Room Dark" position="1136,84">It&#x27;s a medium-sized, rocky planet. About the same size Earth was.
 
