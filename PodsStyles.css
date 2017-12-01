@@ -18,8 +18,8 @@ body {
   /*
   padding-left: 2em;
   font-size:1.8em;
-  background-color:#800000;
   */
+  background-color:#000000;
   color:#eee;
   margin: 5%;
   border: silver ridge 0.8em;
@@ -41,6 +41,12 @@ body {
 .passage[data-tags~=peanut] {
   border-color: Peru;
 }
+.body[data-tags~=space] {
+  background-image: url(starsGIF.gif);
+  background-size: cover;
+  background-position: center;
+}
+
 /*
 ------- END OF PASSAGE-TAGGED STYLES -----
 */

@@ -1,6 +1,7 @@
-<tw-storydata name="Pods" startnode="6" creator="Twine" creator-version="2.1.3" ifid="979B7EC9-5DC5-444B-997E-5058A3363E9A" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+<tw-storydata name="Pods" startnode="50" creator="Twine" creator-version="2.1.3" ifid="979B7EC9-5DC5-444B-997E-5058A3363E9A" format="SugarCube" format-version="2.18.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
   margin: 0;
-  background-color:#000000;
+  /*Set background color to red for now for image troubleshooting. 11-30-17*/
+  background-color:#800000;
 }
 #passages {
   margin: 0;
@@ -18,12 +19,21 @@
   /*
   padding-left: 2em;
   font-size:1.8em;
-  background-color:#800000;
   */
+  background-color:#000000;
   color:#eee;
   margin: 5%;
   border: silver ridge 0.8em;
   border-radius: 1em;
+}
+
+body.space {
+  background-image: url(starsGIF.gif);
+  background-repeat: repeat;
+  /*
+  background-attachment: fixed;   
+  background-size: cover; 
+  */
 }
 
 /*
@@ -41,6 +51,7 @@
 .passage[data-tags~=peanut] {
   border-color: Peru;
 }
+
 /*
 ------- END OF PASSAGE-TAGGED STYLES -----
 */
@@ -67,6 +78,7 @@ a.internalLink:active, a.externalLink:active {
 }
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
 $(document.head).find('#style-ui-bar').remove();
+
 
 
 
@@ -250,4 +262,8 @@ Some tabletop games. You&#x27;re missing the second expansion set for Gerbil Gri
 #Take the handbook
 #Take some games</tw-passagedata><tw-passagedata pid="45" name="Take shoes" tags="" position="1799,1899">Describe what happens</tw-passagedata><tw-passagedata pid="46" name="Take books" tags="" position="2002,1897">Describe what happens</tw-passagedata><tw-passagedata pid="47" name="Take handbook" tags="" position="2003,2001">Describe what happens</tw-passagedata><tw-passagedata pid="48" name="Take games" tags="" position="2002,2104">Describe what happens</tw-passagedata><tw-passagedata pid="49" name="Run for the pods 2" tags="Hallway Red Timer Inventory" position="1099,2298">The #OBJECT in your arms, you slam your palm against the panel next to your door. It slides open.
 
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="50" name="title passage" tags="space" position="631,30">any memento
+
+a twine game by nosepoke
+
+[[start|Asleep]]</tw-passagedata></tw-storydata>
