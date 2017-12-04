@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-color:#000000;
+  /*Set background color to red for now for image troubleshooting. 11-30-17*/
+  background-color:#800000;
 }
 #passages {
   margin: 0;
@@ -12,7 +13,8 @@ body {
   min-width: 26em;
   height: 33%;
   min-height: 33%;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Consolas', 'Lucida Console', 'Andale Mono', monospace;
+  font-size: 18px
   letter-spacing: 0.1em;
   padding: 1.5em;
   /*
@@ -27,13 +29,32 @@ body {
 }
 
 /*
-------- START OF PASSAGE-TAGGED STYLES -----
+------ TAGGED BACKGROUND STYLES -----
 */
+
+body.space {
+  background-image: url(starsGIF.gif);
+  background-repeat: repeat;
+}
+
+body.dark {
+  background-color: #000000
+}
+
+body.light {
+  background-color: #696969
+}
+
+/*
+----- TAGGED PASSAGE STYLES -----
+----- The first one is an example -----
+*/
+
 .passage[data-tags~=mint] {
   border-color: MediumAquaMarine;
 }
-.passage[data-tags~=strawberry] {
-  border-color: HotPink;
+.passage[data-tags~=Light] {
+  background-color: #696969;
 }
 .passage[data-tags~=banana] {
   border-color: Gold;
@@ -41,15 +62,22 @@ body {
 .passage[data-tags~=peanut] {
   border-color: Peru;
 }
-.body[data-tags~=space] {
-  background-image: url(starsGIF.gif);
-  background-size: cover;
-  background-position: center;
+
+
+/*
+----- OCCASIONALLY USED STYLES -----
+*/
+
+.AngryText {
+  font-family: inherit;
+  color: red;
+  font-weight: bold;
 }
 
 /*
-------- END OF PASSAGE-TAGGED STYLES -----
+----- SOME MORE STUFF DOWN HERE, IT'S PROBABLY IMPORTANT -----
 */
+
 .content::before {
   content: '&#8226;';
   position: relative;

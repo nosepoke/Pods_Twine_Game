@@ -13,7 +13,8 @@
   min-width: 26em;
   height: 33%;
   min-height: 33%;
-  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Consolas', 'Lucida Console', 'Andale Mono', monospace;
+  font-size: 18px
   letter-spacing: 0.1em;
   padding: 1.5em;
   /*
@@ -27,23 +28,33 @@
   border-radius: 1em;
 }
 
+/*
+------ TAGGED BACKGROUND STYLES -----
+*/
+
 body.space {
   background-image: url(starsGIF.gif);
   background-repeat: repeat;
-  /*
-  background-attachment: fixed;   
-  background-size: cover; 
-  */
+}
+
+body.dark {
+  background-color: #000000
+}
+
+body.light {
+  background-color: #696969
 }
 
 /*
-------- START OF PASSAGE-TAGGED STYLES -----
+----- TAGGED PASSAGE STYLES -----
+----- The first one is an example -----
 */
+
 .passage[data-tags~=mint] {
   border-color: MediumAquaMarine;
 }
-.passage[data-tags~=strawberry] {
-  border-color: HotPink;
+.passage[data-tags~=Light] {
+  background-color: #696969;
 }
 .passage[data-tags~=banana] {
   border-color: Gold;
@@ -52,9 +63,21 @@ body.space {
   border-color: Peru;
 }
 
+
 /*
-------- END OF PASSAGE-TAGGED STYLES -----
+----- OCCASIONALLY USED STYLES -----
 */
+
+.AngryText {
+  font-family: inherit;
+  color: red;
+  font-weight: bold;
+}
+
+/*
+----- SOME MORE STUFF DOWN HERE, IT'S PROBABLY IMPORTANT -----
+*/
+
 .content::before {
   content: '&#8226;';
   position: relative;
@@ -88,29 +111,26 @@ $(document.head).find('#style-ui-bar').remove();
 
 
 
-</script><tw-passagedata pid="1" name="Awake" tags="Room Dark" position="898,198">Suddenly, you&#x27;re awake.
 
-Your [[room]] is [[dark]], aside from the weak red glow of your [[alarm clock]]. The ever-present hum of the ship&#x27;s systems continues, reassuring.
+</script><tw-passagedata pid="1" name="Awake" tags="Dark Room" position="898,198">Suddenly, you&#x27;re awake.
 
-What woke you up?</tw-passagedata><tw-passagedata pid="2" name="room" tags="Room Dark" position="699,298">It&#x27;s not a big room. You&#x27;re not the captain or anything—just another security officer—but your bed is comfortable, and the sheets are nice.
+Your [[room]] is [[dark]], aside from the weak red glow of your [[alarm clock]]. The ever-present hum of the ship&#x27;s systems continues, reassuring.</tw-passagedata><tw-passagedata pid="2" name="room" tags="Dark Room" position="699,298">It&#x27;s not a big room. You&#x27;re not the captain or anything—just another security officer—but your bed is comfortable, and the sheets are nice.
 
 You have a roommate, who&#x27;s usually working at [[this time|alarm clock]].
 
-You [[can&#x27;t see|dark]] if their bed is empty.</tw-passagedata><tw-passagedata pid="3" name="dark" tags="Room" position="901,400">&quot;Computer, lights on low,&quot; you say. You&#x27;re still half-asleep. Your voice feels sticky.
+You [[can&#x27;t see|dark]] if their bed is empty.</tw-passagedata><tw-passagedata pid="3" name="dark" tags="Dark Room" position="901,400">&quot;Computer, lights on low,&quot; you say. You&#x27;re still half-asleep. Your voice feels sticky.
 
-The computer doesn&#x27;t respond.
+The computer doesn&#x27;t respond. That&#x27;s odd.
 
 Guided by the glow of your [[alarm clock]], you fumble for the wall panel next to your bed. Your hands find the button.
 
-[[Click]].</tw-passagedata><tw-passagedata pid="4" name="alarm clock" tags="Room Dark" position="1100,297">Yeah. What time is it?
+[[Click]].</tw-passagedata><tw-passagedata pid="4" name="alarm clock" tags="Dark" position="1100,297">Yeah. What time is it?
 
-0301. The red letters seem angry, somehow.
+0301. The red letters seem &lt;span class=&quot;AngryText&quot;&gt;angry,&lt;/span&gt; somehow.
 
 People on third shift are wide awake, halfway through their working hours.
 
 But you work first shift, so it&#x27;s [[dark]] in here.</tw-passagedata><tw-passagedata pid="5" name="Click" tags="Room Light" position="899,599">A soft glow emanates from the LED bulb above your bed, illuminating the gray walls.
-
-Why won&#x27;t the computer respond? Why did you wake up?
 
 You look around the room.
 
@@ -121,7 +141,7 @@ You can&#x27;t see into [[the bathroom]] from this angle.
 You could check [[under your bed]], too.
 
 
-</tw-passagedata><tw-passagedata pid="6" name="Asleep" tags="Room Dark" position="899,1">In the emptiness, you sense [[movement|Awake]].</tw-passagedata><tw-passagedata pid="7" name="the wall next to your bed" tags="Room Light" position="749,728">There&#x27;s a square little cubbyhole lined up with your pillows, taking the place of a bedside table. Your ID card and [[handheld|handheld1]] are tucked inside.
+</tw-passagedata><tw-passagedata pid="6" name="Asleep" tags="space" position="899,1">In the emptiness, you sense [[movement|Awake]].</tw-passagedata><tw-passagedata pid="7" name="the wall next to your bed" tags="Room Light" position="749,728">There&#x27;s a square little cubbyhole lined up with your pillows, taking the place of a bedside table. Your ID card and [[handheld|handheld1]] are tucked inside.
 
 Beyond that, there&#x27;s a poster for your [[favorite movie]]. Pictures of your family, and your best friends from school.
 
@@ -240,7 +260,7 @@ You drape it over your shoulder.
 #Leave the box</tw-passagedata><tw-passagedata pid="27" name="favorite movie" tags="Room Light" position="621,723">STAR WARS: EPISODE XVI
 THE FORGOTTEN PERIL
 
-Everyone agrees it&#x27;s the best of the pre-prequels.
+Everyone agrees it&#x27;s the best of the latest trilogy.
 
 </tw-passagedata><tw-passagedata pid="28" name="Take the box" tags="Room Red Inventory Timer" position="1002,2100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="handheld" tags="Red Room Inventory Timer" position="603,1900">HANDHELD DESCRIPTION HERE
 
@@ -262,8 +282,9 @@ Some tabletop games. You&#x27;re missing the second expansion set for Gerbil Gri
 #Take the handbook
 #Take some games</tw-passagedata><tw-passagedata pid="45" name="Take shoes" tags="" position="1799,1899">Describe what happens</tw-passagedata><tw-passagedata pid="46" name="Take books" tags="" position="2002,1897">Describe what happens</tw-passagedata><tw-passagedata pid="47" name="Take handbook" tags="" position="2003,2001">Describe what happens</tw-passagedata><tw-passagedata pid="48" name="Take games" tags="" position="2002,2104">Describe what happens</tw-passagedata><tw-passagedata pid="49" name="Run for the pods 2" tags="Hallway Red Timer Inventory" position="1099,2298">The #OBJECT in your arms, you slam your palm against the panel next to your door. It slides open.
 
-</tw-passagedata><tw-passagedata pid="50" name="title passage" tags="space" position="631,30">any memento
+</tw-passagedata><tw-passagedata pid="50" name="title passage" tags="space" position="631,30">Choices Without Memories
+   
 
-a twine game by nosepoke
+A Twine Game
 
 [[start|Asleep]]</tw-passagedata></tw-storydata>
